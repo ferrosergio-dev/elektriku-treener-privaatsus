@@ -4,19 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privaatsuspoliitika – Elektriku Treener</title>
-  <style>body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }</style>
-</head>
-<body>
-  <h1>Privaatsuspoliitika</h1>
-  <p>Viimati uuendatud: 12. oktoober 2025</p>
-
-  <!-- СЮДА ВСТАВЬ СВОЙ ТЕКСТ -->
-  <!DOCTYPE html>
-<html lang="et">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privaatsuspoliitika – Elektriku Treener</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -28,9 +15,35 @@
     h1, h2 {
       color: #2c3e50;
     }
+    .lang-switcher {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .lang-switcher button {
+      margin: 0 8px;
+      padding: 6px 12px;
+      cursor: pointer;
+    }
+    .lang-content {
+      display: none;
+    }
+    .lang-content.active {
+      display: block;
+    }
   </style>
 </head>
 <body>
+
+<div class="lang-switcher">
+  <button onclick="showLang('et')">EST</button>
+  <button onclick="showLang('en')">ENG</button>
+  <button onclick="showLang('ru')">RUS</button>
+  <!-- Добавьте китайскую версию для Huawei! -->
+  <button onclick="showLang('zh')">中文</button>
+</div>
+
+<!-- Эстонская версия (по умолчанию) -->
+<div id="lang-et" class="lang-content active">
   <h1>Privaatsuspoliitika</h1>
   <p><strong>Rakenduse nimi:</strong> Elektriku Treener</p>
   <p><strong>Arendaja:</strong> Ilja Serõšev</p>
@@ -45,7 +58,6 @@
   <p>Kõik andmed (sh statistika, edenemine, vastuste ajalugu) salvestatakse ainult teie seadmesse ja jäävad täielikult teie kontrolli alla. Rakendus ei saada andmeid interneti ega kolmandatele osapooltele.</p>
 
   <h2>3. Internetiühendus</h2>
-  <p>Rakendus töötab täielikult offline-režiimis. Internetiühendust kasutatakse ainult siis, kui te ise valite:</p>
   <ul>
     <li>„Teavita probleemist“ – avaneb teie meilirakendus</li>
     <li>„Toeta loojat“ – avaneb pangarakendus QR-koodi skannimiseks</li>
@@ -53,7 +65,6 @@
   <p>Selles kontekstis ei kogu arendaja teie andmeid – teie seade suhtleb otse meili- või pangaserveriga.</p>
 
   <h2>4. Kolmandate osapoolte teenused</h2>
-  <p>Rakendus EI kasuta:</p>
   <ul>
     <li>reklaami (nt Google AdMob)</li>
     <li>analüütikat (nt Google Analytics, Firebase)</li>
@@ -68,7 +79,98 @@
   <p>Käesolevat privaatsuspoliitikat võidakse aeg-ajalt uuendada. Uus versioon avaldatakse siin samal lehel.</p>
 
   <p><em>Täname, et kasutate rakendust „Elektriku Treener“!</em></p>
-</body>
-</html>
+</div>
+
+<!-- Английская версия -->
+<div id="lang-en" class="lang-content">
+  <h1>Privacy Policy</h1>
+  <p><strong>App Name:</strong> Elektriku Treener</p>
+  <p><strong>Developer:</strong> Ilja Serõšev</p>
+  <p><strong>Contact:</strong> elektriku.treener@gmail.com</p>
+  <p><strong>Effective Date:</strong> October 12, 2025</p>
+
+  <h2>1. General Information</h2>
+  <p>This privacy policy applies to the “Elektriku Treener” app, designed to help electricians prepare for qualification exams in Estonia.</p>
+
+  <h2>2. Data Collection</h2>
+  <p><strong>The app does NOT collect any personal or device data.</strong></p>
+  <p>All data (including progress, statistics, and answer history) is stored only on your device and remains fully under your control. The app does not send any data over the internet or to third parties.</p>
+
+  <h2>3. Internet Connection</h2>
+  <p>The app works entirely offline. Internet is used only if you choose to:</p>
+  <ul>
+    <li>“Report an issue” – opens your email app</li>
+    <li>“Support the developer” – opens your banking app to scan a QR code</li>
+  </ul>
+  <p>In these cases, no data is collected by the developer—your device communicates directly with the email or bank server.</p>
+
+  <h2>4. Third-party Services</h2>
+  <p>The app does NOT use:</p>
+  <ul>
+    <li>Advertising (e.g., Google AdMob)</li>
+    <li>Analytics (e.g., Google Analytics, Firebase)</li>
+    <li>Cloud services</li>
+    <li>Social media integrations</li>
+  </ul>
+
+  <h2>5. GDPR and Your Rights</h2>
+  <p>Since no personal data is collected, GDPR provisions regarding data deletion or export do not apply. All data is automatically deleted when you uninstall the app.</p>
+
+  <h2>6. Updates</h2>
+  <p>This privacy policy may be updated occasionally. The latest version will always be published on this page.</p>
+
+  <p><em>Thank you for using Elektriku Treener!</em></p>
+</div>
+
+<!-- Русская версия -->
+<div id="lang-ru" class="lang-content">
+  <h1>Политика конфиденциальности</h1>
+  <p><strong>Название приложения:</strong> Elektriku Treener</p>
+  <p><strong>Разработчик:</strong> Илья Серышев</p>
+  <p><strong>Контакт:</strong> elektriku.treener@gmail.com</p>
+  <p><strong>Дата вступления в силу:</strong> 12 октября 2025 г.</p>
+
+  <h2>1. Общая информация</h2>
+  <p>Настоящая политика конфиденциальности применяется к приложению «Elektriku Treener», созданному для подготовки электриков к квалификационным экзаменам в Эстонии.</p>
+
+  <h2>2. Сбор данных</h2>
+  <p><strong>Приложение НЕ собирает ваши персональные или данные устройства.</strong></p>
+  <p>Все данные (включая статистику, прогресс и историю ответов) хранятся только на вашем устройстве и полностью находятся под вашим контролем. Приложение не отправляет данные в интернет или третьим лицам.</p>
+
+  <h2>3. Подключение к интернету</h2>
+  <p>Приложение работает полностью в автономном режиме. Интернет используется только если вы сами выбираете:</p>
+  <ul>
+    <li>«Сообщить о проблеме» — открывается ваше почтовое приложение</li>
+    <li>«Поддержать разработчика» — открывается банковское приложение для сканирования QR-кода</li>
+  </ul>
+  <p>В этом случае разработчик не получает ваши данные — ваше устройство напрямую взаимодействует с сервером почты или банка.</p>
+
+  <h2>4. Сторонние сервисы</h2>
+  <p>Приложение НЕ использует:</p>
+  <ul>
+    <li>рекламу (например, Google AdMob)</li>
+    <li>аналитику (например, Google Analytics, Firebase)</li>
+    <li>облачные сервисы</li>
+    <li>интеграцию с соцсетями</li>
+  </ul>
+
+  <h2>5. GDPR и ваши права</h2>
+  <p>Поскольку данные не собираются, положения GDPR о праве на удаление или экспорт данных не применяются. Все данные автоматически удаляются при удалении приложения.</p>
+
+  <h2>6. Изменения</h2>
+  <p>Настоящая политика может время от времени обновляться. Новая версия будет публиковаться на этой странице.</p>
+
+  <p><em>Спасибо, что используете приложение «Elektriku Treener»!</em></p>
+</div>
+
+<script>
+  function showLang(lang) {
+    // Скрыть все
+    document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+    // Показать выбранную
+    document.getElementById('lang-' + lang)?.classList.add('active');
+  }
+</script>
+
 </body>
 </html>
